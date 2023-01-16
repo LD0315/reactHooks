@@ -1,4 +1,6 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from './components/Layout/Layout';
 import SpreadOperatorDemo from './components/SpreadOperator/SpreadOperatorDemo'
 import UseContextDemo from './components/UseContext/UseContextDemo'
 import UseContextDemo2 from './components/UseContext/UseContextDemo2'
@@ -12,18 +14,22 @@ import UseStateDemo2 from './components/UseState/UseStateDemo2'
 
 export default function App()  {
   return (
-    <>
-      <UseEffectDemo />
-      <UseEffectDemo2 />
-      <UseEffectDemo3 />
-      <UseStateDemo />
-      <UseStateDemo2 />
-      <SpreadOperatorDemo />
-      <UseContextDemo />
-      <UseContextDemo2 />
-      <UseRefDemo />
-      <UseReducerDemo />
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route path="useEffectDemo" element={<UseEffectDemo />} />
+        <Route path="useEffectDemo2" element={<UseEffectDemo2 />} />
+        <Route path="useEffectDemo3" element={<UseEffectDemo3 />} />
+        <Route path="useStateDemo" element={<UseStateDemo />} />
+        <Route path="useStateDemo2" element={<UseStateDemo2 />} />
+        <Route path="spreadOperatorDemo" element={<SpreadOperatorDemo />} />
+        <Route path="useContextDemo" element={<UseContextDemo />} />
+        <Route path="useContextDemo2" element={<UseContextDemo2 />} />
+        <Route path="useRefDemo" element={<UseRefDemo />} />
+        <Route path="useReducerDemo" element={<UseReducerDemo />} />
+      </Route>
+    </Routes>
+    </BrowserRouter>
   )
 }
 
