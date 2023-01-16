@@ -15,6 +15,13 @@ const UseStateDemo2 = () => {
 
     });
 
+    // use the js spread operator to update only the color of the car.
+    const updateColor = () => {
+        setCar(prevState => {
+            return {...prevState, color: "green"}
+        });
+    }
+
     return (
         <>
             <h1>My {brand}</h1>
@@ -22,6 +29,10 @@ const UseStateDemo2 = () => {
 
             <h1>My {car.brand}</h1>
             <p>It is a {car.color} {car.model} from {car.year}.</p>
+            <button
+                type="button"
+                onClick={updateColor}
+                >Change</button>
         </>
     )
 }
