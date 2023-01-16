@@ -1,5 +1,7 @@
 import React from 'react'
 import SpreadOperatorDemo from './components/SpreadOperator/SpreadOperatorDemo'
+import UseContextDemo from './components/UseContext/UseContextDemo'
+import UseContextDemo2 from './components/UseContext/UseContextDemo2'
 import UseEffectDemo from './components/UseEffect/UseEffectDemo'
 import UseEffectDemo2 from './components/UseEffect/UseEffectDemo2'
 import UseEffectDemo3 from './components/UseEffect/UseEffectDemo3'
@@ -15,6 +17,8 @@ export default function App()  {
       <UseStateDemo />
       <UseStateDemo2 />
       <SpreadOperatorDemo />
+      <UseContextDemo />
+      <UseContextDemo2 />
     </>
   )
 }
