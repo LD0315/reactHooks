@@ -45,6 +45,9 @@ const Layout = () => {
           <li>
             <Link to="/useCallBackDemo">UseCallBackDemo</Link>
           </li>
+          <li>
+            <Link to="/useMemoDemo">UseMemoDemo</Link>
+          </li>
         </ul>
       </nav>
 

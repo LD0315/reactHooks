@@ -14,6 +14,7 @@ import UseStateDemo2 from './components/UseState/UseStateDemo2'
 import MapDemo from './components/Map/MapDemo';
 import PropsDemo from './components/Props/PropsDemo';
 import UseCallBackDemo from './components/UseCallBack/UseCallBackDemo';
+import UseMemoDemo from './components/UseMemo/UseMemoDemo';
 
 export default function App()  {
   return (
@@ -33,6 +34,7 @@ export default function App()  {
         <Route path="mapDemo" element={<MapDemo />} />
         <Route path="propsDemo" element={<PropsDemo />} />
         <Route path="useCallBackDemo" element={<UseCallBackDemo />} />
+        <Route path="useMemoDemo" element={<UseMemoDemo />} />
       </Route>
     </Routes>
     </BrowserRouter>
