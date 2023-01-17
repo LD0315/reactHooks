@@ -12,6 +12,7 @@ import UseRefDemo from './components/UseRef/UseRefDemo'
 import UseStateDemo from './components/UseState/UseStateDemo'
 import UseStateDemo2 from './components/UseState/UseStateDemo2'
 import MapDemo from './components/Map/MapDemo';
+import PropsDemo from './components/Props/PropsDemo';
 
 export default function App()  {
   return (
@@ -29,6 +30,7 @@ export default function App()  {
         <Route path="useRefDemo" element={<UseRefDemo />} />
         <Route path="useReducerDemo" element={<UseReducerDemo />} />
         <Route path="mapDemo" element={<MapDemo />} />
+        <Route path="propsDemo" element={<PropsDemo />} />
       </Route>
     </Routes>
     </BrowserRouter>
