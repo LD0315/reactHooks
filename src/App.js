@@ -11,6 +11,7 @@ import UseReducerDemo from './components/UseReducer/UseReducerDemo'
 import UseRefDemo from './components/UseRef/UseRefDemo'
 import UseStateDemo from './components/UseState/UseStateDemo'
 import UseStateDemo2 from './components/UseState/UseStateDemo2'
+import MapDemo from './components/Map/MapDemo';
 
 export default function App()  {
   return (
@@ -27,6 +28,7 @@ export default function App()  {
         <Route path="useContextDemo2" element={<UseContextDemo2 />} />
         <Route path="useRefDemo" element={<UseRefDemo />} />
         <Route path="useReducerDemo" element={<UseReducerDemo />} />
+        <Route path="mapDemo" element={<MapDemo />} />
       </Route>
     </Routes>
     </BrowserRouter>

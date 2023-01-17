@@ -36,6 +36,9 @@ const Layout = () => {
           <li>
             <Link to="/useReducerDemo">UseReducerDemo</Link>
           </li>
+          <li>
+            <Link to="/mapDemo">ReactMapDemo</Link>
+          </li>
         </ul>
       </nav>
 
