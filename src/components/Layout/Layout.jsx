@@ -42,6 +42,9 @@ const Layout = () => {
           <li>
             <Link to="/propsDemo">ReactPropsDemo</Link>
           </li>
+          <li>
+            <Link to="/useCallBackDemo">UseCallBackDemo</Link>
+          </li>
         </ul>
       </nav>
 
